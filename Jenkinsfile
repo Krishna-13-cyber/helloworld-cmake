@@ -8,20 +8,6 @@ pipeline {
     // }
 
     stages {
-        stage('Setup Dependencies') {
-            steps {
-                // Install any necessary dependencies
-                sh 'apt-get update && apt-get install -y cmake make gcc g++'
-            }
-        }
-
-        stage('Setup Build Environment') {
-            steps {
-                // Create a directory for out-of-source build
-                sh 'mkdir -p build'
-            }
-        }
-
         stage('Build') {
             steps {
                 // Create a directory for out-of-source build
