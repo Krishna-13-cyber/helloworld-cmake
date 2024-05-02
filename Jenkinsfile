@@ -8,13 +8,6 @@ pipeline {
     // }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout your source code from your version control system
-                git 'https://github.com/Krishna-13-cyber/helloworld-cmake.git'
-            }
-        }
-
         stage('Setup Dependencies') {
             steps {
                 // Install any necessary dependencies
